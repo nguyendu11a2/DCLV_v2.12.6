@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">DCLV_v2.12.6</string>
+    <string name="title_home">Home</string>
+    <string name="title_coupon">Coupon</string>
+    <string name="title_dashboard">Qr</string>
+    <string name="title_notifications">Profile</string>
+</resources>

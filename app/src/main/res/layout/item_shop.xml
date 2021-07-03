@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:gl="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardPreventCornerOverlap="true"
+    android:layout_marginTop="5dp"
+
+    app:cardCornerRadius="5dp">
+
+
+    <net.colindodd.gradientlayout.GradientRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:minHeight="100dp"
+        android:padding="10dp"
+        android:id="@+id/gradient"
+        gl:end_color="@color/gradientOrange"
+        gl:orientation="LEFT_RIGHT"
+        gl:start_color="@color/gradientLightYellow">
+        <TextView
+            android:paddingTop="10dp"
+            android:layout_alignParentTop="true"
+            android:id="@+id/tv_item_shop1"
+            android:text="Chợ láng Lớn CS2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="#fdb501"
+            />
+        <TextView
+            android:paddingTop="10dp"
+            android:layout_alignParentTop="true"
+            android:id="@+id/tv_item_shop2"
+            android:text="500m"
+            android:textSize="16dp"
+            android:layout_marginTop="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="#6A90B5"
+            />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:padding="1dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/market" />
+
+
+    </net.colindodd.gradientlayout.GradientRelativeLayout>
+</androidx.cardview.widget.CardView>

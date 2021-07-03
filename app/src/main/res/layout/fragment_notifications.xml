@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wallpaper"
+    tools:context=".ui.profile.ProfileFragment">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="270dp"
+            android:background="@drawable/ic_bg_1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_marginTop="30dp"
+            app:layout_constraintTop_toTopOf="@+id/imageView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/hcmut">
+
+        </ImageView>
+
+        <TextView
+            android:id="@+id/textview1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Thanh Điệp"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="@+id/imageView2"
+            app:layout_constraintStart_toStartOf="@+id/imageView2"
+            app:layout_constraintTop_toBottomOf="@+id/imageView2"
+            />
+        <TextView
+            android:id="@+id/textview2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="nguyendu11a2@gmail.com"
+            android:textAlignment="center"
+            android:textStyle="italic"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="@+id/textview1"
+            app:layout_constraintStart_toStartOf="@+id/textview1"
+            app:layout_constraintTop_toBottomOf="@+id/textview1"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+
+            android:elevation="4dp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:elevation="10dp"
+                android:background="@drawable/white_background2"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imageVie1"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:layout_margin="15dp"
+                    app:srcCompat="@drawable/coin" />
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dp"
+                    android:text="18 Xu"
+                    android:textSize="18dp"
+                    android:textAlignment="center"
+                    android:textColor="#03bbc9"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:elevation="10dp"
+                android:background="@drawable/white_background2"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imageVie4"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:layout_margin="15dp"
+                    app:srcCompat="@drawable/coupon" />
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="11 Voucher"
+                    android:textSize="18dp"
+                    android:textAlignment="center"
+                    android:textColor="#03bbc9"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            app:layout_constraintTop_toBottomOf="@+id/imageView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            >
+
+            <android.widget.Button
+                android:id="@+id/button1"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/background_btn"
+                android:drawableStart="@drawable/setting"
+                android:drawableEnd="@drawable/arrow_right"
+                android:drawablePadding="20dp"
+                android:elevation="3dp"
+                android:paddingStart="20dp"
+                android:text="Cài đặt"
+                android:textAlignment="viewStart"
+                android:textSize="18sp"
+                 />
+
+            <android.widget.Button
+                android:id="@+id/button2"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/background_btn"
+                android:drawableStart="@drawable/information"
+                android:drawableEnd="@drawable/arrow_right"
+                android:drawablePadding="20dp"
+                android:elevation="3dp"
+                android:paddingStart="20dp"
+                android:text="Thông tin tài khoản"
+                android:textAlignment="viewStart"
+                android:textSize="18sp"
+                 />
+
+            <android.widget.Button
+                android:id="@+id/button3"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/background_btn"
+                android:drawableStart="@drawable/help"
+                android:drawableEnd="@drawable/arrow_right"
+                android:drawablePadding="20dp"
+                android:elevation="3dp"
+                android:paddingStart="20dp"
+                android:text="Câu hỏi thường gặp"
+                android:textAlignment="viewStart"
+                android:textSize="18sp"
+                 />
+            <android.widget.Button
+                android:id="@+id/button4"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/background_btn"
+                android:drawableStart="@drawable/support"
+                android:drawableEnd="@drawable/arrow_right"
+                android:drawablePadding="20dp"
+                android:elevation="3dp"
+                android:paddingStart="20dp"
+                android:text="Liên hệ/Trợ giúp"
+                android:textAlignment="viewStart"
+                android:textSize="18sp"
+                 />
+            <android.widget.Button
+                android:id="@+id/button6"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/background_blue"
+
+
+                android:elevation="3dp"
+                android:text="Đăng xuất"
+                android:textColor="#ffffff"
+
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+
+
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.gift.GiftFragment"
+    android:background="@drawable/wallpaper">
+    <LinearLayout
+        android:id="@+id/tv_qr1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        >
+        <EditText
+            android:layout_width="260dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/white_background"
+            android:elevation="3dp"
+            android:ems="10"
+            android:hint="Nhập mã ưu đãi..."
+            android:inputType="textPersonName"
+            android:paddingStart="20dp"
+            android:textSize="16sp"
+            android:textStyle="bold|italic"
+            />
+        <android.widget.Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_blue"
+            android:text="Lưu"
+            android:textColor="#ffffff"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="16dp"
+            />
+    </LinearLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="100dp"
+        android:alpha="0.8"
+        android:background="@drawable/bg_login"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_qr1" >
+        <TextView
+            android:id="@+id/tv_qr2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Đưa mã này cho thu ngân để tích điểm ngay!"
+            android:textSize="13dp"
+            android:textColor="#203A43"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:background="@drawable/white_background3"
+        android:layout_width="330dp"
+        android:layout_height="330dp"
+        android:padding="10dp"
+        android:layout_marginTop="30dp"
+        android:id="@+id/iv_output1"
+        android:scaleType="fitCenter"
+        android:adjustViewBounds="true"
+        tools:ignore="MissingConstraints"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/constraintLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+    <TextView
+        android:id="@+id/textview3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:drawablePadding="5dp"
+        android:textSize="15dp"
+        android:textColor="#203A43"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_output1"
+        />
+    <ImageView
+        android:background="@drawable/white_background3"
+        android:layout_width="330dp"
+        android:layout_height="120dp"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/iv_output2"
+        android:scaleType="fitCenter"
+        android:adjustViewBounds="true"
+        tools:ignore="MissingConstraints"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_output1"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+    <TextView
+
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:drawableStart="@drawable/information"
+        android:drawablePadding="5dp"
+        android:text=" Mã này cũng chính là số điện thoại của bạn. Bạn
+cũng có thể dùng số điện thoại để tích điểm nha!!!"
+        android:textSize="13dp"
+        android:textColor="#203A43"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_output2"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
